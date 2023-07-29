@@ -71,7 +71,7 @@
 
 /*header*/
 .page-haeder {
-  min-height: 186px;
+  min-height: 226px;
   padding-top: 15px;
   margin: 0 auto;
   background: linear-gradient(transparent 40px, var(--color-yellow) 40px);
@@ -117,7 +117,7 @@
   margin: 0 auto;
   width: 1160px;
   min-height: 544px;
-  background: linear-gradient(var(--color-yellow) 134px, transparent 134px);
+  background: linear-gradient(var(--color-yellow) 114px, transparent 114px);
 }
 
 .slider-number {
@@ -298,4 +298,124 @@
   color: var(--color-white);
   line-height: 20px;
   font-size: 16px;
+}
+
+/*catalog inner header*/
+.main-header-title {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--color-black);
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*filter*/
+.filter {
+  background-color: var(--color-light-gray);
+}
+.filter-title {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--color-black);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.filter-group-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.range-input-item label,
+.range-input,
+.range-input::placeholder {
+  color: var(--color-black);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.range-input-item label {
+  opacity: 0.3;
+}
+
+.color,
+.bluetooth {
+  color: var(--color-black);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*sorting*/
+.sorting {
+  background-color: var(--color-light-gray);
+}
+.sorting-title {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--color-black);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.select-sorting {
+  color: var(--color-black);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/*catalog product*/
+.catalog {
+  background-color: var(--color-white);
+}
+
+.product-card-link {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.product-price {
+  line-height: normal;
+}
+
+.new-mark {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/*pagination*/
+.pagination {
+  width: 760px;
+  background-color: var(--color-light-gray);
+}
+
+.pagination-item {
+  opacity: 0.3;
+}
+
+.current-page {
+  opacity: 0.6;
+}
+
+.pagination-link {
+  color: var(--color-black);
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
 }
