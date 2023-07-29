@@ -107,6 +107,111 @@
           </li>
         </ul>
       </header>
+      <section class="filter">
+        <h2 class="filter-title">
+          Фильтр:
+        </h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-group">
+            <legend>
+              <h3 class="filter-group-title">
+                Стоимость
+              </h3>
+            </legend>
+            <div class="range-scale">
+              <div class="range-bar">
+                <button class="range-toggle range-min" type="button" name="range-min">
+                  <span class="visually-hidden">
+                    Изменить минимальныую цену.
+                  </span>
+                </button>
+                <button class="range-toggle range-max" type="button" name="range-max">
+                  <span class="visually-hidden">
+                    Изменить максимальную цену.
+                  </span>
+                </button>
+              </div>
+            </div>
+            <ul class="range-input-list">
+              <li class="range-input-item">
+                <label>
+                  от
+                  <input class="range-input range-input-min" type="number" name="range-input-min" value="0" required>
+                </label>
+              </li>
+              <li class="range-input-item">
+                <label>
+                  до
+                  <input class="range-input range-input-max" type="number" name="range-input-max" value="5000" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-group">
+            <legend>
+              <h3 class="filter-group-title">
+                Цвет
+              </h3>
+            </legend>
+            <ul class="filter-color-list">
+              <li class="filter-color-item">
+                <label class="color">
+                  <input class="color-checkbox" type="checkbox" name="black" checked>
+                  Черный
+                </label>
+              </li>
+              <li class="filter-color-item">
+                <label class="color">
+                  <input class="color-checkbox" type="checkbox" name="white" checked>
+                  Белый
+                </label>
+              </li>
+              <li class="filter-color-item">
+                <label class="color">
+                  <input class="color-checkbox" type="checkbox" name="deep-blue">
+                  Синий
+                </label>
+              </li>
+              <li class="filter-color-item">
+                <label class="color">
+                  <input class="color-checkbox" type="checkbox" name="red" >
+                  Красный
+                </label>
+              </li>
+              <li class="filter-color-item">
+                <label class="color">
+                  <input class="color-checkbox" type="checkbox" name="pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-group">
+            <legend>
+              <h3 class="filter-group-title">
+                Bluetooth
+              </h3>
+            </legend>
+            <ul class="filter-bluetooth-list">
+              <li class="filter-bluetooth-item">
+                <label class="bluetooth">
+                  <input class="bluetooth-radio" type="radio" name="bluetooth" value="yes" checked>
+                  Есть
+                </label>
+              </li>
+              <li class="filter-bluetooth-item">
+                <label class="bluetooth">
+                  <input class="bluetooth-radio" type="radio" name="bluetooth" value="no">
+                  Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter-button" type="submit">
+            Показать
+          </button>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="logo logo-footer" href="index.html">
