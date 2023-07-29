@@ -49,17 +49,18 @@
 }
 
 .button {
-  color: var(--color-black);
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 18px;
   line-height: normal;
-  letter-spacing: 0.2em;
-  text-decoration: none;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  color: var(--color-black);
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
 }
 
 .page {
   margin: 0;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -71,32 +72,34 @@
 
 /*header*/
 .page-haeder {
-  min-height: 226px;
-  padding-top: 15px;
-  margin: 0 auto;
-  background: linear-gradient(transparent 40px, var(--color-yellow) 40px);
   width: 1160px;
+  min-height: 226px;
+  margin: 0 auto;
+  padding-top: 15px;
+
+  background: linear-gradient(transparent 40px, var(--color-yellow) 40px);
 }
 
 .input-search {
-  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
   color: var(--color-black);
 }
 
 .input-search::placeholder {
-  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
   color: var(--color-black);
+
   opacity: 0.3;
 }
 
 .button-search {
-  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
   color: var(--color-black);
 }
 
@@ -107,16 +110,17 @@
 
 .compare,
 .cart {
-  text-decoration: none;
   color: var(--color-black);
+  text-decoration: none;
 }
 
 /*slider*/
 
 .hero-slider-item {
-  margin: 0 auto;
   width: 1160px;
   min-height: 544px;
+  margin: 0 auto;
+
   background: linear-gradient(var(--color-yellow) 114px, transparent 114px);
 }
 
@@ -126,9 +130,9 @@
 }
 
 .slide-title {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
 }
 
@@ -149,16 +153,17 @@
 .category-item {
   width: 160px;
   min-height: 253px;
+
   background: linear-gradient(var(--color-yellow) 160px, transparent 160px);
 }
 
 .category-link {
-  text-decoration: none;
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: -0.02em;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
+  text-decoration: none;
+  letter-spacing: -0.02em;
 }
 
 .category-title {
@@ -173,14 +178,14 @@
 .property-item {
   width: 1160px;
   min-height: 319px;
-  padding-bottom: 72px;
   margin: 0 auto;
+  padding-bottom: 72px;
 }
 
 .property-title {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
 }
 
@@ -199,15 +204,15 @@
 /*about*/
 
 .about-title {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
 }
 
 .delivery-company-list {
-  line-height: 20px;
   font-weight: 700;
+  line-height: 20px;
   letter-spacing: -0.02em;
 }
 
@@ -215,9 +220,9 @@
 /*contacts*/
 
 .contacts-title {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
 }
 
@@ -237,8 +242,9 @@
 /*subscribe*/
 .subscribe {
   min-height: 421px;
-  background-color: var(--color-light-gray);
   padding: 64px 0 56px;
+
+  background-color: var(--color-light-gray);
 }
 
 .subscribe-contain {
@@ -247,31 +253,33 @@
 }
 
 .subscribe-title {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
 }
 
 .subscribe-field {
-  font-family: inherit;
   font-size: 18px;
   line-height: 30px;
+  font-family: inherit;
   color: inherit;
 }
 
 .subscribe-field::placeholder {
-  font-family: inherit;
   font-size: 18px;
   line-height: 30px;
+  font-family: inherit;
   color: inherit;
+
   opacity: 0.5;
 }
 
 /*footer*/
 .page-footer {
-  background-color: var(--color-dark-gray);
   padding: 62px 0 61px;
+
+  background-color: var(--color-dark-gray);
 }
 
 .page-footer-wrapper {
@@ -285,34 +293,34 @@
 }
 
 .footer-address .shop-location {
-  line-height: 20px;
   font-size: 16px;
+  line-height: 20px;
 }
 
 .footer-navigation-link {
-  color: var(--color-white);
   line-height: normal;
+  color: var(--color-white);
 }
 
 .footer-phone {
-  color: var(--color-white);
-  line-height: 20px;
   font-size: 16px;
+  line-height: 20px;
+  color: var(--color-white);
 }
 
 /*catalog inner header*/
 .main-header-title {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
 }
 
 .breadcrumbs-link {
-  text-decoration: none;
-  color: var(--color-black);
   font-size: 16px;
   line-height: 20px;
+  color: var(--color-black);
+  text-decoration: none;
 }
 
 /*filter*/
@@ -320,12 +328,12 @@
   background-color: var(--color-light-gray);
 }
 .filter-title {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 16px;
   line-height: normal;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
-  letter-spacing: 0.2em;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .filter-group-title {
@@ -337,9 +345,9 @@
 .range-input-item label,
 .range-input,
 .range-input::placeholder {
-  color: var(--color-black);
   font-size: 14px;
   line-height: 20px;
+  color: var(--color-black);
 }
 
 .range-input-item label {
@@ -348,9 +356,9 @@
 
 .color,
 .bluetooth {
-  color: var(--color-black);
   font-size: 16px;
   line-height: 20px;
+  color: var(--color-black);
 }
 
 /*sorting*/
@@ -358,19 +366,19 @@
   background-color: var(--color-light-gray);
 }
 .sorting-title {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 16px;
   line-height: normal;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
-  letter-spacing: 0.2em;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .select-sorting {
-  color: var(--color-black);
-  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  font-family: inherit;
+  color: var(--color-black);
 }
 
 /*catalog product*/
@@ -381,9 +389,9 @@
 .product-card-link {
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -0.02em;
-  text-decoration: none;
   color: var(--color-black);
+  text-decoration: none;
+  letter-spacing: -0.02em;
 }
 
 .product-price {
@@ -391,9 +399,9 @@
 }
 
 .new-mark {
-  font-family: Raleway, "Arial Black", Arial, sans-serif;
   font-size: 14px;
   line-height: normal;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
   color: var(--color-black);
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -402,6 +410,7 @@
 /*pagination*/
 .pagination {
   width: 760px;
+
   background-color: var(--color-light-gray);
 }
 
@@ -414,8 +423,8 @@
 }
 
 .pagination-link {
-  color: var(--color-black);
   font-size: 16px;
   line-height: 20px;
+  color: var(--color-black);
   text-decoration: none;
 }
