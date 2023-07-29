@@ -1,0 +1,301 @@
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Raleway";
+
+  font-display: swap;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2"),
+       url("../fonts/raleway/raleway-800.woff2") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik";
+
+  font-display: swap;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2"),
+       url("../fonts/rubik/rubik-400.woff2") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Rubik";
+
+  font-display: swap;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2")
+       url("../fonts/rubik/rubik-700.woff2") format("woff");
+}
+
+:root {
+  /*primary colors*/
+  --color-black: #000000;
+  --color-dark-gray: #444444;
+  --color-gray: #dcdcdc;
+  --color-light-gray: #ebebeb;
+  --color-light: #f0f0f0;
+  --color-white: #ffffff;
+
+  /*additional colors*/
+  --color-yellow: #ffe17f;
+  --color-yellow-hover: #ffc700;
+  --color-purple: #af4fff;
+
+  /*status colors*/
+  --color-error: #ff3d3d;
+  --color-warning: #fd912e;
+  --color-success: #08af00;
+}
+
+.button {
+  color: var(--color-black);
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Rubik, Arial, sans-serif;
+  color: var(--color-dark-gray);
+
+  background-color: var(--color-white);
+}
+
+/*header*/
+.page-haeder {
+  min-height: 186px;
+  padding-top: 15px;
+  margin: 0 auto;
+  background: linear-gradient(transparent 40px, var(--color-yellow) 40px);
+  width: 1160px;
+}
+
+.input-search {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-black);
+}
+
+.input-search::placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-black);
+  opacity: 0.3;
+}
+
+.button-search {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-black);
+}
+
+.login-button {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.compare,
+.cart {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+/*slider*/
+
+.hero-slider-item {
+  margin: 0 auto;
+  width: 1160px;
+  min-height: 544px;
+  background: linear-gradient(var(--color-yellow) 134px, transparent 134px);
+}
+
+.slider-number {
+  font-size: 180px;
+  color: var(--color-white);
+}
+
+.slide-title {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--color-black);
+}
+
+.feature-title {
+  font-size: 16px;
+}
+
+.feature-value {
+  font-size: 36px;
+}
+
+/*category*/
+.category {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.category-item {
+  width: 160px;
+  min-height: 253px;
+  background: linear-gradient(var(--color-yellow) 160px, transparent 160px);
+}
+
+.category-link {
+  text-decoration: none;
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+}
+
+.category-title {
+  font-size: inherit;
+}
+
+/*property*/
+.property {
+  background: linear-gradient(transparent 102px,var(--color-light-gray) 102px);
+}
+
+.property-item {
+  width: 1160px;
+  min-height: 319px;
+  padding-bottom: 72px;
+  margin: 0 auto;
+}
+
+.property-title {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--color-black);
+}
+
+/*delivery on order*/
+
+.delivery-on-order {
+  width: 1160px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+
+.button-title {
+  font-size: 20px;
+}
+
+/*about*/
+
+.about-title {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--color-black);
+}
+
+.delivery-company-list {
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+
+/*contacts*/
+
+.contacts-title {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--color-black);
+}
+
+.address-title,
+.working-hours-title {
+  font-size: 24px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.phone {
+  color: inherit;
+}
+
+/*subscribe*/
+.subscribe {
+  min-height: 421px;
+  background-color: var(--color-light-gray);
+  padding: 64px 0 56px;
+}
+
+.subscribe-contain {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.subscribe-title {
+  font-family: Raleway, "Arial Black", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--color-black);
+}
+
+.subscribe-field {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: inherit;
+}
+
+.subscribe-field::placeholder {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: inherit;
+  opacity: 0.5;
+}
+
+/*footer*/
+.page-footer {
+  background-color: var(--color-dark-gray);
+  padding: 62px 0 61px;
+}
+
+.page-footer-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-address {
+  font-style: normal;
+  color: var(--color-white);
+}
+
+.footer-address .shop-location {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.footer-navigation-link {
+  color: var(--color-white);
+  line-height: normal;
+}
+
+.footer-phone {
+  color: var(--color-white);
+  line-height: 20px;
+  font-size: 16px;
+}
