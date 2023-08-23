@@ -48,52 +48,55 @@
               <a class="compare" href="#">Сравнить</a>
             </li>
             <li class="shop-user-control-item">
-              <span class="count">2</span>
-              <a class="cart" href="#">Корзина</a>
+              <a class="cart" href="#">
+                <span class="count">2</span>
+                Корзина
+              </a>
+              <!-- класс для открытия open -->
+              <div class="popover">
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <a class="popover-link" href="#">
+                      <div class="popover-item-image-wrapper">
+                        <img class="popover-item-image" src="images/product/amateur-monopod.jpg" width="39" height="43" alt="Любительская селфи-палка." aria-hidden>
+                      </div>
+                      <p class="popover-item-title">Любительская<br>селфи-палка</p>
+                    </a>
+                    <button class="delete-product" type="button">
+                      <span class="visually-hidden">
+                        Удалить товар из корзины.
+                      </span>
+                    </button>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="#">
+                      <div class="popover-item-image-wrapper">
+                        <img class="popover-item-image" src="images/product/professional-monopod.jpg" width="39" height="43" alt="Профессиональная селфи-палка." aria-hidden>
+                      </div>
+                      <p class="popover-item-title">Профессиональная селфи-палка</p>
+                    </a>
+                    <button class="delete-product" type="button">
+                      <span class="visually-hidden">
+                        Удалить товар из корзины.
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-count-price">
+                  <p>
+                    Товаров: <span class="popover-count">2</span>
+                  </p>
+                  <p>
+                    Сумма: <span class="popover-price">2000</span> ₽
+                  </p>
+                </div>
+                <a class="button open-cart-button" href="#">
+                  Открыть корзину
+                </a>
+              </div>
             </li>
           </ul>
         </nav>
-        <aside class="popover">
-          <ul class="popover-list">
-            <li class="popover-item">
-              <a class="popover-link" href="#">
-                <div class="popover-item-image-wrapper">
-                  <img class="popover-item-image" src="images/product/amateur-monopod.jpg" width="39" height="43" alt="Любительская селфи-палка." aria-hidden>
-                </div>
-                <p class="popover-item-title">Любительская<br>селфи-палка</p>
-              </a>
-              <button class="delete-product" type="button">
-                <span class="visually-hidden">
-                  Удалить товар из корзины.
-                </span>
-              </button>
-            </li>
-            <li class="popover-item">
-              <a class="popover-link" href="#">
-                <div class="popover-item-image-wrapper">
-                  <img class="popover-item-image" src="images/product/professional-monopod.jpg" width="39" height="43" alt="Профессиональная селфи-палка." aria-hidden>
-                </div>
-                <p class="popover-item-title">Профессиональная селфи-палка</p>
-              </a>
-              <button class="delete-product" type="button">
-                <span class="visually-hidden">
-                  Удалить товар из корзины.
-                </span>
-              </button>
-            </li>
-          </ul>
-          <div class="popover-count-price">
-            <p>
-              Товаров: <span class="popover-count">2</span>
-            </p>
-            <p>
-              Сумма: <span class="popover-price">2000</span> ₽
-            </p>
-          </div>
-          <a class="button open-cart-button" href="#">
-            Открыть корзину
-          </a>
-        </aside>
       </div>
       <nav class="site-navigation">
         <ul class="site-navigation-list">
@@ -107,7 +110,7 @@
                     <a class="submenu-link" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="submenu-item">
-                    <a class="submenu-link" href="catalog.html">Моноподы для cелфи</a>
+                    <a class="submenu-link active" href="catalog.html">Моноподы для cелфи</a>
                   </li>
                   <li class="submenu-item">
                     <a class="submenu-link" href="#">Экшн-камеры</a>
@@ -428,11 +431,9 @@
                   </a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link more-pages" href="#" aria-label="Показать больше страниц" title="Показать больше страниц">
-                    <span aria-hidden>
-                      ...
-                    </span>
-                  </a>
+                  <span class="pagination-link more-pages" aria-hidden>
+                    ...
+                  </span>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#" aria-label="Перейти на страницу 15">
@@ -494,19 +495,19 @@
             <li class="social-item">
               <a class="social-link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Канал в Telegram</span>
-                <img class="social-icon" src="images/social/telegram.svg" width="14" height="12" aria-hidden>
+                <img class="social-icon" src="images/social/telegram.svg" width="14" height="12" alt="Telegram." aria-hidden>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Канал на YouTube</span>
-                <img class="social-icon" src="images/social/youtube.svg" width="16" height="11 " aria-hidden>
+                <img class="social-icon" src="images/social/youtube.svg" width="16" height="11" alt="YouTube." aria-hidden>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Страничка в Twitter</span>
-                <img class="social-icon" src="images/social/twitter.svg" width="15" height="14" aria-hidden>
+                <img class="social-icon" src="images/social/twitter.svg" width="15" height="14" alt="Twitter." aria-hidden>
               </a>
             </li>
           </ul>
