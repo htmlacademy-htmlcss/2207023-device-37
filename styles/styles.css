@@ -283,11 +283,25 @@ html {
 .login-button {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   color: var(--color-black);
   text-decoration: none;
 
   transition: opacity 0.2s ease-in-out;
+}
+
+.login-button:not(.logout):before {
+  content: "";
+
+  display: block;
+  width: 15px;
+  height: 12px;
+  margin-right: 13px;
+
+  background-image: url("../images/user-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .login-button:hover {
@@ -301,14 +315,6 @@ html {
 
 .login-button:active {
   opacity: 0.3;
-}
-
-.user-icon-container {
-  margin-right: 13px;
-}
-
-.user-icon {
-  object-fit: contain;
 }
 
 .shop-user-control-list {
@@ -537,6 +543,10 @@ html {
   list-style: none;
 }
 
+.submenu-item {
+  height: 18px;
+}
+
 .submenu-item:not(:last-child) {
   margin-bottom: 18px;
 }
@@ -544,8 +554,9 @@ html {
 .submenu-link {
   position: relative;
 
-  display: inline-block;
+  display: block;
   min-height: 23px;
+  width: fit-content;
 
   font-size: 16px;
   line-height: 18px;
@@ -555,6 +566,7 @@ html {
 
   transition: opacity 0.2s ease-in-out;
 }
+
 
 .submenu-link.active::after {
   content: "";
@@ -697,6 +709,7 @@ html {
 
   display: none;
   width: 560px;
+  margin-bottom: 38px;
 }
 
 .slider-text-item.active {
@@ -1695,10 +1708,29 @@ html {
   transition: background-color 0.2s ease-in-out;
 }
 
-.social-icon {
-  transition: opacity 0.2s ease-in-out;
+.social-link::before {
+  content: "";
 
-  object-fit: contain;
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+.telegram::before {
+  background-image: url("../images/social/telegram.svg");
+}
+
+.youtube::before {
+  background-image: url("../images/social/youtube.svg");
+}
+
+.twitter::before {
+  background-image: url("../images/social/twitter.svg");
 }
 
 .social-link:hover {
@@ -1714,7 +1746,7 @@ html {
   outline: none;
 }
 
-.social-link:active .social-icon {
+.social-link:active::before {
   opacity: 0.3;
 }
 
@@ -2012,6 +2044,7 @@ html {
 .range-input::placeholder {
   font-size: 14px;
   line-height: 20px;
+  font-family: inherit;
   color: var(--color-black);
 }
 
@@ -2037,11 +2070,11 @@ html {
 }
 
 .range-input-min {
-  width: 8px;
+  width: 10px;
 }
 
 .range-input-max {
-  width: 32px;
+  width: 35px;
 }
 
 .range-input-item:focus-within {
@@ -2228,6 +2261,7 @@ html {
 
 /*sorting*/
 .sorting-catalog-wrapper {
+  width: 840px;
   margin-right: auto;
 }
 
@@ -2525,19 +2559,21 @@ html {
 
 .more-product {
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 55px;
+  max-width: 760px;
+  min-height: 55px;
+  padding: 10px 30px;
 
   font-size: 16px;
+  text-align: center;
   letter-spacing: 3.2px;
 
   border: 3px solid var(--color-btn-gray);
 
   transition: border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-
 
 .more-product:hover {
   border-color: var(--color-black);
@@ -2662,7 +2698,7 @@ html {
 /*popover*/
 .popover {
   position: absolute;
-  top: 40px;
+  top: 37px;
   right: -77px;
   z-index: 100;
 
@@ -2788,7 +2824,12 @@ html {
 }
 
 .popover-count-price p {
+  width: fit-content;
   margin: auto 0;
+}
+
+.popover-count-price p:last-of-type {
+  margin-left: auto;
 }
 
 .open-cart-button {
@@ -2850,10 +2891,11 @@ html {
   left: 50%;
 
   width: 920px;
-  padding: 72px 70px;
+  padding: 62px 70px;
 
   background-color: var(--color-white);
   border: 10px solid var(--color-black);
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.10);
   transform: translate(-50%, -50%);
 }
 
@@ -2869,8 +2911,8 @@ html {
 
 .popup-close-button {
   position: absolute;
-  top: 84px;
-  right: 80px;
+  top: 74px;
+  right: 70px;
 
   width: 26px;
   height: 26px;
@@ -2906,6 +2948,10 @@ html {
   border: none;
 }
 
+.popup-input-group:last-of-type {
+  margin-bottom: 22px;
+}
+
 .popup-input-container {
   position: relative;
 
@@ -2929,6 +2975,7 @@ html {
 
 .popup-input {
   height: 60px;
+  margin-bottom: 20px;
   padding: 20px;
 
   font-size: 16px;
@@ -2987,7 +3034,7 @@ html {
 
 .input-comment {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
 
   font-size: 14px;
@@ -3101,6 +3148,7 @@ html {
 .popup-input-wrapper {
   display: flex;
   width: 180px;
+  height: 60px;
 
   background-color: var(--color-light);
 }
