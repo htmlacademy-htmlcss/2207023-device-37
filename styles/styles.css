@@ -2563,6 +2563,7 @@ html {
   justify-content: center;
   align-items: center;
   max-width: 760px;
+  width: 100%;
   min-height: 55px;
   padding: 10px 30px;
 
